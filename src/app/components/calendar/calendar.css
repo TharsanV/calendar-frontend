@@ -1,0 +1,67 @@
+
+.disable-hover {
+  pointer-events: none;
+}
+
+.cal-month-view .bg-purple-1,
+.cal-week-view .cal-day-columns .bg-purple-1,
+.cal-day-view .bg-purple-1 {
+  background-color: hotpink !important;
+}
+
+.cal-month-view .bg-purple-1,
+.cal-week-view .cal-day-columns .bg-purple-1,
+.cal-day-view .bg-purple-1 {
+  background-color: #DDA0DD !important;
+}
+
+.cal-month-view .bg-purple-2,
+.cal-week-view .cal-day-columns .bg-purple-2,
+.cal-day-view .bg-purple-2 {
+  background-color: #FF00FF !important;
+}
+
+.cal-month-view .bg-purple-3,
+.cal-week-view .cal-day-columns .bg-purple-3,
+.cal-day-view .bg-purple-3 {
+  background-color: #9370DB !important;
+}
+
+.cal-month-view .bg-purple-4,
+.cal-week-view .cal-day-columns .bg-purple-4,
+.cal-day-view .bg-purple-4k {
+  background-color: #8B008B	!important;
+}
+
+.cal-day-columns .cal-hour-segment {
+  touch-action: none;
+}
+
+.cal-time-label-column {
+  float: right;
+}
+
+.cal-time-events {
+  display: flex; flex-direction: row-reverse; 
+}
+
+.cal-day-headers {
+  padding-left: 0 !important;
+  padding-right: 70px !important;
+}
+
+.cal-day-columns {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-right: solid 1px;
+  border-right-color: #e1e1e1;
+}
+
+.cal-day-headers {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-right: solid 1px !important;
+  border-right-color: #e1e1e1 !important;
+}

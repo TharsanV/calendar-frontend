@@ -1,0 +1,37 @@
+<div class="modal fade" #welcomeModal tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+  data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="welcomeModalTitle">Welcome</h3>
+      </div>
+      <form #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="modal-body">
+          <div *ngIf="participants!=null" class="form-group">
+            <label for="existingDropDown">Choose an existing user</label>
+            <select ngModel name="existingDropDown" #existingDropDown="ngModel" class="form-control" [ngClass]="{
+              'selected':selectedExisting
+            }" require (click)="setSelectedExisting(true)">
+              <option *ngFor="let participant of participants" [ngValue]="participant">
+                {{participant.name}}
+              <option>
+            </select>
+          </div>
+          <h3 style="text-align: center;">OR</h3>
+          <div class="form-group">
+            <label for="newNameText">Create a new user</label>
+            <input ngModel name="newNameText" type="text" minlength="1" #newNameText="ngModel" class="form-control"
+              id="inputName" (click)="setSelectedExisting(false)" [ngClass]="{
+              'selected':!selectedExisting
+            }" placeHolder="Enter your name" size="10">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div *ngIf="showChooseOneAlert" class="alert alert-danger w-100">
+            You must choose an existing user or create a new user</div>
+          <button class="btn btn-primary form-control">OK</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

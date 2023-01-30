@@ -1,0 +1,99 @@
+<!-- <mat-toolbar>
+
+  <div id="container">
+    
+    <div id="date-header">
+      {{ viewDate | calendarDate:('weekViewTitle') }}
+    </div>
+  
+    <div>
+      <button mat-fab [color]="chosenCalendarAction == CalendarAction.Search ? 'primary': 'white'" color="white" (click)='selectAction(CalendarAction.Search)' aria-label="Example icon button with a heart icon">
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-fab [color]="chosenCalendarAction == CalendarAction.Add ? 'primary': 'white'" (click)='selectAction(CalendarAction.Add)' aria-label="Example icon button with a heart icon">
+        <mat-icon>add</mat-icon>
+      </button> 
+    </div>
+
+    <div class="btn-group">
+      <div
+        class="btn btn-primary"
+        mwlCalendarPreviousView
+        [view]="'week'"
+        [(viewDate)]="viewDate"
+        (viewDateChange)="updateViewDateEvent.emit(viewDate)"
+      >
+        Previous
+      </div>
+      <div
+        class="btn btn-outline-secondary"
+        mwlCalendarToday
+        [(viewDate)]="viewDate"
+        (viewDateChange)="updateViewDateEvent.emit(viewDate)"
+      >
+        Today
+      </div>
+      <div
+        class="btn btn-primary"
+        mwlCalendarNextView
+        [view]="'week'"
+        [(viewDate)]="viewDate"
+        (viewDateChange)="updateViewDateEvent.emit(viewDate)"
+      >
+        Next
+      </div>
+    </div>
+  </div>
+</mat-toolbar> -->
+
+
+
+
+<mat-toolbar>
+  
+  <div id="container">
+    <div id="left">
+      <!-- <button mat-icon-button color="primary" (click)='toggleSidebar()'>
+        <mat-icon>menu</mat-icon>
+      </button> -->
+      <div id="date-header">
+        {{ viewDate | date:'MMM'}}
+      </div>
+    </div>
+
+    <div id="toolbar">
+      <button mat-mini-fab [color]="chosenCalendarAction == CalendarAction.Search ? 'primary': 'white'" color="white" (click)='selectAction(CalendarAction.Search)' aria-label="Example icon button with a heart icon">
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-mini-fab [color]="chosenCalendarAction == CalendarAction.Add ? 'primary': 'white'" (click)='selectAction(CalendarAction.Add)' aria-label="Example icon button with a heart icon">
+        <mat-icon>add</mat-icon>
+      </button> 
+    </div>
+
+    <div id="right">
+      <button mat-icon-button color="primary">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      
+      <button mat-icon-button color="primary" (click)='navigateCalendar(CalendarNavigation.Prev)'>
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+      <button mat-icon-button color="primary" (click)='navigateCalendar(CalendarNavigation.Next)'>
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+
+    </div>
+  </div>
+
+</mat-toolbar>
+
+<!-- <mat-toolbar>
+  <div id="toolbar">
+    <button mat-mini-fab [color]="chosenCalendarAction == CalendarAction.Search ? 'primary': 'white'" color="white" (click)='selectAction(CalendarAction.Search)' aria-label="Example icon button with a heart icon">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-mini-fab [color]="chosenCalendarAction == CalendarAction.Add ? 'primary': 'white'" (click)='selectAction(CalendarAction.Add)' aria-label="Example icon button with a heart icon">
+      <mat-icon>add</mat-icon>
+    </button> 
+  </div>
+</mat-toolbar> -->

@@ -1,0 +1,39 @@
+<!-- Modal -->
+<div #tutorialModal class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">How To Use</h3>
+      </div>
+      <div class="modal-body">
+        <h5>Hi There, your availability is requested for Event Name. Please mark down your availability in the calendar by the deadline date: deadline date</h5>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <button mat-fab color="primary">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </td>
+                <td>Select icon by clicking on it. Then click down and drag on the calendar to mark your available times. (Purple means icon is selected)</td>
+              </tr>
+              <tr>
+                <td>
+                  <button mat-fab color="white">
+                    <mat-icon>search</mat-icon>
+                  </button>
+                <td>Select icon by clicking on it. Then click down and drag on the calendar to see who is available during those times. (White means icon is  not selected)</td>
+              </tr>
+              <tr>
+                <td style="height: 100%"><div id="purpleshade"></div></td>
+                <td>The shades of purple indicates how suitable a time is for the participants. the darker the shade the more participants that are available at that time.</td>
+              </tr>
+            </tbody>
+          </table>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary w-100" (click)="hideModal()">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

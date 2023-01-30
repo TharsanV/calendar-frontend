@@ -1,0 +1,21 @@
+
+//TODO comment object fields and remove unnecessary ones
+//TODO make it mandatory to select user before displaying calendar
+//TODO create a description field
+//TODO make checkboxes better looking
+//TODO Fix issue when creating multiple days
+//TODO create interface CalendarAvailability that extends CalendarEvent
+
+//TODO This application helps gather participants availability inorder to find the most suitable time to host an event.
+//Click the + and then click and drag on the calendar to mark your available times.
+//Click the ? and then click and drag on the calenda to see who is available during those times.
+//the shades of purple indicates how suitable a time is for the participant. the darker the shade the more participants that are available at that time.
+
+// #DDA0DD
+// #DA70D6
+// #FF00FF
+// #BA55D3
+// #9370DB
+// #9400D3
+// #8B008B
+// #4B0082
